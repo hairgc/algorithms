@@ -17,7 +17,6 @@ public class Evaluate {
 	public static void main(String[] args) {
 		Stack<String> ops=new Stack<String>();
 		Stack<Double> vals=new Stack<Double>();
-		
 		String []operation= {"+","-","*","/","sqrt"};
 		
 		while(!StdIn.isEmpty()) {

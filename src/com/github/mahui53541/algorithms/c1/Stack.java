@@ -17,10 +17,9 @@ public class Stack<Item> implements Iterable<Item>{
 	
 	private Node<Item> first;	//top of stack
 	private int n;				//size of the stack
-	
-	
 	// helper linked list class
-    private class Node<Item> {
+    @SuppressWarnings("hiding")
+	private class Node<Item> {
         private Item item;
         private Node<Item> next;
     }
@@ -74,6 +73,7 @@ public class Stack<Item> implements Iterable<Item>{
 		return new ListIterator<Item>(first);
 	}
 
+	@SuppressWarnings("hiding")
 	private class ListIterator<Item> implements Iterator<Item> {
         private Node<Item> current;
 
