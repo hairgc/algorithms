@@ -58,6 +58,19 @@ public class Stack<Item> implements Iterable<Item>{
 		return first.item;
 	}
 	
+	public static <Item>Stack<Item> copy(Stack<Item> s){
+		Stack<Item> result=new Stack<Item>();
+		Stack<Item> temp=new Stack<Item>();
+		Iterator<Item> it=s.iterator();
+		while(it.hasNext()) {
+			temp.push(it.next());
+		}
+		it=temp.iterator();
+		while(it.hasNext()) {
+			result.push(it.next());
+		}
+		return result;
+	}
 	public String toString() {
         StringBuilder s = new StringBuilder();
         for (Item item : this) {
