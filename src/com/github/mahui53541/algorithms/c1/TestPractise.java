@@ -1,5 +1,6 @@
 package com.github.mahui53541.algorithms.c1;
 
+
 public class TestPractise {
 
 	public static void main(String[] args) {
