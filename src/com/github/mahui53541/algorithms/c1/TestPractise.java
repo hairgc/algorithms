@@ -1,5 +1,6 @@
 package com.github.mahui53541.algorithms.c1;
 
+import java.lang.reflect.AccessibleObject;
 
 public class TestPractise {
 
@@ -11,6 +12,10 @@ public class TestPractise {
 			N/=2;
 		}
 		for(int d:stack) System.out.print(d);
+		//HashMap
+		//EnumSet
+		//AccessibleObject.setAccessible(array, flag);
+		
 	}
 
 }
